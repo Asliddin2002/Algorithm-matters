@@ -1055,6 +1055,10 @@ function digitalRoot(n) {
 
 console.log(digitalRoot(456));
 
+
+// ----------------------29 - Oktabr--------------------------------
+
+
 // Algo 1
 //  Write a function that accepts an integer n and a string s as parameters,
 //and returns a string of s repeated exactly n times.
@@ -1071,7 +1075,7 @@ function check(a, x) {
 console.log(check(["1", "a", "4", "y"], "m"));
 
 
-// 29 - Oktabr
+
 
 // Algo 2
 
