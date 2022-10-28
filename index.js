@@ -1070,6 +1070,9 @@ function check(a, x) {
 
 console.log(check(["1", "a", "4", "y"], "m"));
 
+
+// 29 - Oktabr
+
 // Algo 2
 
 // You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
