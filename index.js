@@ -1006,3 +1006,79 @@ function nbYear(p0, percent, aug, p) {
   return year;
 }
 console.log(nbYear(1500, 5, 100, 5000));
+
+//  Quick sort
+
+function quickSort(arr) {
+  if (arr.length < 2) {
+    return arr;
+  }
+  let target = arr[arr.length - 1];
+  let left = [];
+  let right = [];
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (target > arr[i]) {
+      left.push(arr[i]);
+    } else {
+      right.push(arr[i]);
+    }
+  }
+
+  return [...quickSort(left), target, ...quickSort(right)];
+}
+
+console.log(quickSort([-5, -8, -1, 9, 4, 6]));
+
+// Arefmetic progression
+
+function progression(arr) {
+  let p = arr[1] - arr[0];
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] + p == arr[i + 1]) {
+      p = p;
+    } else {
+      return 0;
+    }
+  }
+  return p;
+}
+console.log(progression([-2, 3, 8, 13, 18]));
+
+function digitalRoot(n) {
+  let sum = n;
+  while (sum > 9) {
+    sum = ("" + sum).split("").reduce((a, b) => +a + +b);
+  }
+
+  return sum;
+}
+
+console.log(digitalRoot(456));
+
+// Algo 1
+//  Write a function that accepts an integer n and a string s as parameters,
+//and returns a string of s repeated exactly n times.
+function repeatStr(n, s) {
+  return s.repeat(n);
+}
+repeatStr(5, "hello");
+
+function check(a, x) {
+  let index = a.indexOf(x);
+  return index == -1 ? false : true;
+}
+
+console.log(check(["1", "a", "4", "y"], "m"));
+
+// Algo 2
+
+// You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+
+// Array can contain numbers or strings. X can be either.
+
+// Return true if the array contains the value, false if not.
+
+function check(a, x) {
+  let index = a.indexOf(x);
+  return index == -1 ? false : true;
+}
